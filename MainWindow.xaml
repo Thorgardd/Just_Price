@@ -1,0 +1,81 @@
+﻿<Window x:Class="JustPrice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JustPrice"
+        mc:Ignorable="d"
+        Title="Le Juste Prix" Height="600" Width="450" ResizeMode="NoResize">
+
+    <Grid>
+
+        <Image x:Name="Background"
+               Source="/background.jpg"
+               Panel.ZIndex="-1"
+               Stretch="Fill"/>
+
+        <TextBox 
+            HorizontalAlignment="Center"
+            Margin="0,10,0,0" 
+            Text="Le Juste Prix" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" 
+            Width="220" 
+            Height="34"
+            FontSize="20"
+            TextAlignment="Center"
+            FontWeight="ExtraBold"
+            BorderThickness="0"
+            x:Name="Titre"
+            Background="FloralWhite"/>
+
+        <Label Content="VEUILLEZ ENTRER UN NOMBRE :" 
+               HorizontalAlignment="Left" 
+               Margin="50,143,0,0" 
+               VerticalAlignment="Top"
+               Width="190"
+               BorderBrush="Black"
+               BorderThickness="2,2,2,2"/>
+
+        <TextBox HorizontalAlignment="Left"
+                 Margin="260,149,0,0"
+                 Text="" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" 
+                 Width="120"
+                 x:Name="UserBoxNumber"/>
+
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="50,219,0,0"
+                   Text=""
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top"
+                   Height="289" 
+                   Width="330"
+                   Background="FloralWhite"
+                   x:Name="Answer"/>
+
+        <Button Content="SUBMIT"
+                HorizontalAlignment="Left" 
+                Margin="295,172,0,0" 
+                VerticalAlignment="Top" 
+                Width="50"
+                x:Name="Submit"
+                Click="Submit_Click"/>
+
+        <Label Content=""
+               HorizontalAlignment="Center" 
+               Margin="0,513,0,0" 
+               VerticalAlignment="Top"
+               Width="64"
+               x:Name="NumberWin"
+               BorderBrush="Black"
+               BorderThickness="2,2,2,2"
+               Background="FloralWhite"/>
+        
+        <Button Content="CLEAR"
+                Margin="295,124,105,440"
+                BorderBrush="Black"/>
+
+    </Grid>
+</Window>
